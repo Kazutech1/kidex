@@ -79,6 +79,7 @@ export default function Home() {
             <img
               src={activeSlide.bannerUrl}
               alt={activeSlide.title}
+              referrerPolicy="no-referrer"
               className="absolute inset-0 w-full h-full object-cover object-center mix-blend-lighten opacity-30 group-hover/hero:scale-101 transition-transform duration-[10s]"
               onError={(e) => {
                 e.currentTarget.style.display = "none";
@@ -199,6 +200,7 @@ export default function Home() {
                   <img
                     src={manga.coverUrl}
                     alt={manga.title}
+                    referrerPolicy="no-referrer"
                     className="absolute inset-0 w-full h-full object-cover"
                     onError={(e) => {
                       e.currentTarget.style.opacity = "0";

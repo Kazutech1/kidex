@@ -135,6 +135,7 @@ export default function MangaDetailsPage() {
         <img
           src={manga.coverUrl}
           alt={manga.title}
+          referrerPolicy="no-referrer"
           className="w-full h-full object-cover opacity-15 filter blur-3xl scale-120 transform saturate-150"
           onError={(e) => {
             e.currentTarget.style.display = "none";
@@ -161,6 +162,7 @@ export default function MangaDetailsPage() {
           <img
             src={manga.coverUrl}
             alt={manga.title}
+            referrerPolicy="no-referrer"
             className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300"
             onError={(e) => {
               e.currentTarget.style.opacity = "0";

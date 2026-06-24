@@ -44,6 +44,7 @@ export default function MangaCard({ manga }: MangaCardProps) {
         <img
           src={manga.coverUrl}
           alt={manga.title}
+          referrerPolicy="no-referrer"
           className="absolute inset-0 w-full h-full object-cover object-center opacity-0 group-hover:scale-105 transition-transform duration-500"
           onError={(e) => {
             // If the physical image file is not found yet, keep opacity 0 to show the stylized gradient mesh

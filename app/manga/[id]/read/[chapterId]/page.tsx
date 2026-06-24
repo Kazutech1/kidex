@@ -307,6 +307,7 @@ export default function ReaderPage() {
           <img
             src={page.imageUrl}
             alt={`Page ${page.pageNumber}`}
+            referrerPolicy="no-referrer"
             className="w-full object-contain select-none p-0 m-0 border-0"
             loading="lazy"
             onError={(e) => {
